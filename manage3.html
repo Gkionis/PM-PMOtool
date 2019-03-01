@@ -57,95 +57,111 @@
       </a>
     </div>
 
-    <a href="login.html" class="govuk-header__link govuk-header__link--service-name">
-      Project Management Tool
-    </a>
+    <div class="govuk-header__content">
+      <a href="login.html" class="govuk-header__link govuk-header__link--service-name">Project Management Tool</a>
 
-  </nav>
-</div>
-</div>
+      <button role="button" class="govuk-header__menu-button js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
+      <nav>
+          <ul id="navigation" class="govuk-header__navigation " aria-label="Top Level Navigation">
+              <li class="govuk-header__navigation-item govuk-header__navigation-item--active">
+                  <a class="govuk-header__link" href="admin.html">Projects Maintenance</a>
+              </li>
+              <li class="govuk-header__navigation-item">
+                  <a class="govuk-header__link" href="reports.html">View reports</a>
+              </li>
+              <li class="govuk-header__navigation-item">
+                  <a class="govuk-header__link" href="login.html">Sign out</a>
+              </li>
+          </ul>
+      </nav>
+    </div>
+  </div>
 </header>
-
 
 <!-- Main content -->
 <body>
 
- 
+  <!-- Alpha Banner -->
   <div class="govuk-width-container">
-      <main class="govuk-main-wrapper app-main-class" id="main-content" role="main">
-          <div class="govuk-grid-row">
-
-              <!-- Heading -->
-
-
-              <div class="govuk-grid-column-full">
-                  <h1 class="govuk-heading-xl">Project management tool</h1>
-              </div>
-          </div>
-          <style>
-              .govuk-input {
-                  max-width: 400px;
-                  }
-
-          </style>
-
-
-          <div class="govuk-grid-row">
-              <div class="govuk-grid-column-one-half">
-                  <h2 class="govuk-heading-l">Sign in</h2>
-                  <div class="govuk-form-group">
-                      <label class="govuk-label" for="email">
-                          Email address
-                      </label>
-                      <span id="email-hint" class="govuk-hint">
-                          Sign in using your DfE email address
-                      </span>
-                      <input class="govuk-input" id="email" name="email" type="email" aria-describedby="email-hint">
-                  </div>
-                  <div class="govuk-form-group">
-                      <label class="govuk-label" for="password">
-                          Password
-                      </label>
-                      <span id="email-hint" class="govuk-hint">
-                          Sign in using your previously created password
-                      </span>
-                      <input class="govuk-input" id="password" name="password" type="password" aria-describedby="email-hint">
-                  </div>
-                  <a href="password-reset.html" class="govuk-link">Forgotten your password?</a>
-
-              </div>
-
-              <div class="govuk-grid-column-one-half">
-                  <h2 class="govuk-heading-l">Not registered yet?</h2>
-                  <p class="govuk-body">If this is the first time you are using the Project Management Tool, you will need to<a href="register.html" class="govuk-link"> be registered.</a></p>
-                  <br>
-                  <p class="govuk-body">Once registered, you will be able to:</p>
-                  <ul class="govuk-list govuk-list--bullet">
-                      <li>file a report for your projects</li>
-                      <li>view reports in your portfolio</li>
-                      <li>create and edit projects</li>
-                      <li>manage your portfolio</li>
-                  </ul>
-                  <p class="govuk-body">Depending on your current role.</p>
-                  <div class="govuk-inset-text">
-                      You will only need to register once
-                  </div>
-
-
-              </div>
-          </div>
-
-      </main>
-
-
-  <!-- Green Button -->
-
-  <a href="admin.html" role="button" draggable="false" class="govuk-button govuk-button--start">
-      Continue
-  </a>
+    <main class="govuk-main-wrapper app-main-class" id="main-content" role="main">
+      <div class="govuk-phase-banner">
+        <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
+          beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service – your
+          <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+        </span>
+      </p>
+    </div>
+  </main>
+</div>
+<!-- Heading -->
+<div class="govuk-width-container">
+  <h1 class="govuk-heading-xl">Manage portfolios</h1>
 </div>
 
+<div class="govuk-width-container">
+<div class="govuk-form-group">
+  <label class="govuk-heading-l" for="name">
+    Add new portfolio
+  </label>
+  <input class="govuk-input govuk-input--width-30" id="addport" name="addport" type="text">
+</div>
+
+<button type="submit" class="govuk-button">
+  Add
+</button>
+</div>
+<br>
+<div class="govuk-width-container">
+  <h1 class="govuk-heading-l">Maintain existing portfolios</h1>
+
+<table class="govuk-table">
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="col">National career service</th>
+      <th class="govuk-table__header" scope="col"><a href="#" class="govuk-link">Edit</a></th>
+    </tr>
+  </tbody>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Funding service</th>
+      <td class="govuk-table__header"><a href="manage2.html" class="govuk-link">Edit</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Data service</th>
+      <td class="govuk-table__header"><a href="#" class="govuk-link">Edit</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Technical services</th>
+      <td class="govuk-table__header"><a href="#" class="govuk-link">Edit</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Teaching and schools</th>
+      <td class="govuk-table__header"><a href="#" class="govuk-link">Edit</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Digital service</th>
+      <td class="govuk-table__header"><a href="#" class="govuk-link">Edit</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Apprenticeship service</th>
+      <td class="govuk-table__header"><a href="#" class="govuk-link">Edit</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Administration service</th>
+      <td class="govuk-table__header"><a href="#" class="govuk-link">Edit</a></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+<div class="govuk-width-container">
+<a href="admin.html" class="govuk-back-link">Back</a>
 </body>
+</div>
 <!-- Page footer -->
 <footer class="govuk-footer " role="contentinfo">
   <div class="govuk-width-container ">
